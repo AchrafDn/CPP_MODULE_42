@@ -1,4 +1,4 @@
-CC = c++ -std=c++98
+CC = c++
 Cflags = -Wall -Wextra -Werror
 Cfiles = Contact.cpp PhoneBook.cpp ex01.cpp
 

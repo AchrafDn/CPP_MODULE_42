@@ -1,4 +1,4 @@
-CC = c++ -std=c++98
+CC = c++
 Cflags = -Wall -Wextra -Werror -fsanitize=address -g3
 CppFiles = main.cpp
 Name = a.out

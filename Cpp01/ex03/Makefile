@@ -1,6 +1,6 @@
-CC = c++ -std=c++98
+CC = c++
 Cflags = -Wall -Wextra -Werror -fsanitize=address -g3
-CppFiles = main.cpp HumanA.cpp Weapon.cpp
+CppFiles = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 Name = mini
 RM = rm -rf
 

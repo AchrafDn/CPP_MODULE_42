@@ -6,11 +6,10 @@
 
 class	HumanA{
     private:
-		Weapon&		weapon;
+		Weapon&	weapon;// store a reference to the Weapon object
 		std::string	name;
     public:
-		HumanA();
-		HumanA(std::string name, Weapon arm);
+		HumanA(std::string name, Weapon& arm);
 		void	attack();
 };
 
