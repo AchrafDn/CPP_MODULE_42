@@ -1,7 +1,7 @@
 CC = c++
 Cflags = -Wall -Wextra -Werror -fsanitize=address -g3
 CppFiles = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
-Name = mini
+Name = Human
 RM = rm -rf
 
 OBJ = ${CppFiles:.cpp=.o}

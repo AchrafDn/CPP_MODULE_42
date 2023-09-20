@@ -1,6 +1,6 @@
 CC = c++
 Cflags = -Wall -Wextra -Werror -fsanitize=address -g3
-CppFiles = main.cpp Zombie.cpp
+CppFiles = main.cpp Zombie.cpp zombieHorde.cpp
 Name = Zombie
 RM = rm -rf
 

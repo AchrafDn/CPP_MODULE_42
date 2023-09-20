@@ -1,7 +1,7 @@
 CC = c++
 Cflags = -Wall -Wextra -Werror -fsanitize=address -g3
-CppFiles = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
-Name = BraiiiiiiinnnzzzZ
+CppFiles = Harl.cpp main.cpp
+Name = Harl
 RM = rm -rf
 
 OBJ = ${CppFiles:.cpp=.o}
@@ -20,4 +20,4 @@ clean:
 fclean: clean
 	$(RM) $(Name)
 
-re: fclean all 
+re: fclean all
