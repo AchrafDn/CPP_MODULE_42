@@ -10,7 +10,7 @@ int main(int ac, char **av)
             for(int i = 0; av[j - 1][i]; i++)
             {
                 upper = std::toupper(av[j - 1][i]);
-                std::cout << upper;
+                std:: cout << upper;
             }
         }
     }

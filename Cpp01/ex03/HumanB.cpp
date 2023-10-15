@@ -1,20 +1,14 @@
 #include "HumanB.hpp"
 
-
-HumanB::HumanB()
-{
-    name = "";
-    weapon = NULL;
-}
-
 HumanB::HumanB(std::string _name)
 {
     name = _name;
+    weapon = NULL;
 }
 
-void    HumanB::setWeapon(Weapon& weapon)
+void    HumanB::setWeapon(Weapon& nweapon)
 {
-    this->weapon = &weapon;
+    weapon = &nweapon;
 }
 
 void    HumanB::attack()

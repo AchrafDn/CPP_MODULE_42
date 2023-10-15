@@ -1,5 +1,5 @@
 CC = c++
-Cflags = -Wall -Wextra -Werror -fsanitize=address -g3
+Cflags = -Wall -Wextra -Werror
 CppFiles = Harl.cpp main.cpp
 Name = Harl
 RM = rm -rf
@@ -9,7 +9,7 @@ OBJ = ${CppFiles:.cpp=.o}
 all: $(Name)
 
 $(Name): $(OBJ)
-	$(CC) $(Cflags) $(OBJ) -fsanitize=address -g3 -o $(Name)
+	$(CC) $(Cflags) $(OBJ) -o $(Name)
 
 .cpp.o:
 	$(CC) $(Cflags) -c $< -o $@

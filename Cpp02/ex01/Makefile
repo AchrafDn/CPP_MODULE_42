@@ -1,14 +1,16 @@
 CC = c++
-Cflags = -Wall -Wextra -Werror
-CppFiles = main.cpp Sed.cpp
-Name = Sed
+Cflags = -Wall -Wextra -Werror -std=c++98
+Cfiles = main.cpp Fixed.cpp
+
+Name = a.out
 RM = rm -rf
 
-OBJ = ${CppFiles:.cpp=.o}
+OBJ = ${Cfiles:.cpp=.o}
+
 
 all: $(Name)
 
-$(Name): $(OBJ)
+$(Name) : $(OBJ)
 	$(CC) $(Cflags) $(OBJ) -o $(Name)
 
 .cpp.o:
@@ -20,4 +22,4 @@ clean:
 fclean: clean
 	$(RM) $(Name)
 
-re: fclean all
+re : fclean all
